@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/username/Документы/CPlusPlus/CalculatorQtCr/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/username/Документы/CPlusPlus/CalculatorQtCr/build/CalculatorQtCr_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -g -std=gnu++17 -fPIC -o CMakeFiles/CalculatorQtCr.dir/CalculatorQtCr_autogen/mocs_compilation.cpp.o -c /home/username/Документы/CPlusPlus/CalculatorQtCr/build/CalculatorQtCr_autogen/mocs_compilation.cpp",
+  "file": "/home/username/Документы/CPlusPlus/CalculatorQtCr/build/CalculatorQtCr_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/CalculatorQtCr.dir/CalculatorQtCr_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/username/Документы/CPlusPlus/CalculatorQtCr/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/username/Документы/CPlusPlus/CalculatorQtCr/build/CalculatorQtCr_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -g -std=gnu++17 -fPIC -o CMakeFiles/CalculatorQtCr.dir/main.cpp.o -c /home/username/Документы/CPlusPlus/CalculatorQtCr/main.cpp",
+  "file": "/home/username/Документы/CPlusPlus/CalculatorQtCr/main.cpp",
+  "output": "CMakeFiles/CalculatorQtCr.dir/main.cpp.o"
+},
+{
+  "directory": "/home/username/Документы/CPlusPlus/CalculatorQtCr/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/username/Документы/CPlusPlus/CalculatorQtCr/build/CalculatorQtCr_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -g -std=gnu++17 -fPIC -o CMakeFiles/CalculatorQtCr.dir/mainwindow.cpp.o -c /home/username/Документы/CPlusPlus/CalculatorQtCr/mainwindow.cpp",
+  "file": "/home/username/Документы/CPlusPlus/CalculatorQtCr/mainwindow.cpp",
+  "output": "CMakeFiles/CalculatorQtCr.dir/mainwindow.cpp.o"
+},
+{
+  "directory": "/home/username/Документы/CPlusPlus/CalculatorQtCr/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/username/Документы/CPlusPlus/CalculatorQtCr/build/CalculatorQtCr_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -g -std=gnu++17 -fPIC -o CMakeFiles/CalculatorQtCr.dir/calculaton.cpp.o -c /home/username/Документы/CPlusPlus/CalculatorQtCr/calculaton.cpp",
+  "file": "/home/username/Документы/CPlusPlus/CalculatorQtCr/calculaton.cpp",
+  "output": "CMakeFiles/CalculatorQtCr.dir/calculaton.cpp.o"
+}
+]

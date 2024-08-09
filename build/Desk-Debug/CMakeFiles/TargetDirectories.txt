@@ -1,0 +1,9 @@
+/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/CMakeFiles/OpenFRW.dir
+/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/CMakeFiles/edit_cache.dir
+/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/CMakeFiles/rebuild_cache.dir
+/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/CMakeFiles/list_install_components.dir
+/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/CMakeFiles/install.dir
+/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/CMakeFiles/install/local.dir
+/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/CMakeFiles/install/strip.dir
+/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/CMakeFiles/OpenFRW_autogen_timestamp_deps.dir
+/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/CMakeFiles/OpenFRW_autogen.dir

@@ -1,0 +1,24 @@
+{
+	"BUILD_DIR" : "/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/OpenFRW_autogen",
+	"CMAKE_BINARY_DIR" : "/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/username/Documents/CPlusPlus/OpenFRW",
+	"CMAKE_SOURCE_DIR" : "/home/username/Documents/CPlusPlus/OpenFRW",
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/OpenFRW_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/username/Documents/CPlusPlus/OpenFRW/Icons/iconfinder-backward-back-arrow-previous-left-4593199_122265.svg",
+		"/home/username/Documents/CPlusPlus/OpenFRW/Icons/iconfinder-forward-arrow-next-right-direction-4593180_122243.svg"
+	],
+	"LOCK_FILE" : "/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/CMakeFiles/OpenFRW_autogen.dir/AutoRcc_resource_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resource" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resource.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/CMakeFiles/OpenFRW_autogen.dir/AutoRcc_resource_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/username/Documents/CPlusPlus/OpenFRW/resource.qrc",
+	"VERBOSITY" : 0
+}

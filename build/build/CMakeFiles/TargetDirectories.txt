@@ -1,0 +1,8 @@
+/home/username/Документы/CPlusPlus/CalculatorQtCr/build/CMakeFiles/CalculatorQtCr.dir
+/home/username/Документы/CPlusPlus/CalculatorQtCr/build/CMakeFiles/edit_cache.dir
+/home/username/Документы/CPlusPlus/CalculatorQtCr/build/CMakeFiles/rebuild_cache.dir
+/home/username/Документы/CPlusPlus/CalculatorQtCr/build/CMakeFiles/list_install_components.dir
+/home/username/Документы/CPlusPlus/CalculatorQtCr/build/CMakeFiles/install.dir
+/home/username/Документы/CPlusPlus/CalculatorQtCr/build/CMakeFiles/install/local.dir
+/home/username/Документы/CPlusPlus/CalculatorQtCr/build/CMakeFiles/install/strip.dir
+/home/username/Документы/CPlusPlus/CalculatorQtCr/build/CMakeFiles/CalculatorQtCr_autogen.dir

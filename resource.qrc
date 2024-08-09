@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>Icons/iconfinder-backward-back-arrow-previous-left-4593199_122265.svg</file>
+        <file>Icons/iconfinder-forward-arrow-next-right-direction-4593180_122243.svg</file>
+    </qresource>
+</RCC>

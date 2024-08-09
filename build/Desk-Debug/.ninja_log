@@ -1,0 +1,18 @@
+# ninja log v5
+1	252	1723225444027716800	OpenFRW_autogen/timestamp	e164c355187bec2f
+1	252	1723225444027716800	OpenFRW_autogen/mocs_compilation.cpp	e164c355187bec2f
+1	252	1723225444027716800	/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/OpenFRW_autogen/timestamp	e164c355187bec2f
+253	2775	1723225446523732368	CMakeFiles/OpenFRW.dir/mainwindow.cpp.o	b204740dc440b882
+1	252	1723225444027716800	/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/OpenFRW_autogen/mocs_compilation.cpp	e164c355187bec2f
+252	2339	1723225446110729792	CMakeFiles/OpenFRW.dir/OpenFRW_autogen/mocs_compilation.cpp.o	ab0b83fe52e644b
+253	2557	1723225446326731139	CMakeFiles/OpenFRW.dir/main.cpp.o	f4ed04a3eb78e96d
+2775	3202	1723225446985735249	OpenFRW	966899ae5f26ae7e
+3	65	1723227373675333049	OpenFRW_autogen/timestamp	e164c355187bec2f
+3	65	1723227373675333049	OpenFRW_autogen/mocs_compilation.cpp	e164c355187bec2f
+3	65	1723227373675333049	/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/OpenFRW_autogen/timestamp	e164c355187bec2f
+3	65	1723227373675333049	/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/OpenFRW_autogen/mocs_compilation.cpp	e164c355187bec2f
+67	90	1723227373698333186	OpenFRW_autogen/EWIEGA46WW/qrc_resource.cpp	dbf7e76ad9aacd9a
+67	90	1723227373698333186	/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/OpenFRW_autogen/EWIEGA46WW/qrc_resource.cpp	dbf7e76ad9aacd9a
+90	154	1723227373758333543	CMakeFiles/OpenFRW.dir/OpenFRW_autogen/EWIEGA46WW/qrc_resource.cpp.o	49205882846802e8
+90	2097	1723227375687330158	CMakeFiles/OpenFRW.dir/mainwindow.cpp.o	b204740dc440b882
+2097	2525	1723227376129324633	OpenFRW	7367ee922e63bef8
