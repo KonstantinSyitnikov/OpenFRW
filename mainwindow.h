@@ -7,6 +7,7 @@
 #include <QString>
 #include <QStack>
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -27,6 +28,7 @@ protected:
 
 private:
     Ui::MainWindow *ui;
+   QString showText = " ";
 };
 
 #endif // MAINWINDOW_H

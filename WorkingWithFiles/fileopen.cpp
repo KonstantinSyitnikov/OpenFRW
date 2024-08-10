@@ -2,25 +2,26 @@
 #include <QFile>
 #include <QTextStream>
 #include <QDebug>
+#include <QFileDialog>
 
 FileOpen::FileOpen() {
     // Constructor
 }
 
-void FileOpen::openAndReadFile(const QString& filePath) {
+
+QString FileOpen::openAndReadFile(const QString& filePath) {
     QFile file(filePath);
 
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qDebug() << "Cannot open file for reading:" << file.errorString();
-        return;
+        qDebug() << "File Not Open" << file.errorString();
+        return "";
     }
 
     QTextStream in(&file);
+    QString fileContent = in.readAll();
 
-    while (!in.atEnd()) {
-        QString line = in.readLine();
-        qDebug() << line;
-    }
+    qDebug() << "File content:\n" << fileContent;
 
     file.close();
+    return fileContent;
 }

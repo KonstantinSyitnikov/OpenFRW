@@ -28,7 +28,7 @@ public:
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout_2;
     QVBoxLayout *verticalLayout;
-    QLabel *label_2;
+    QLabel *ShowLabel;
     QFrame *TitleFrame;
     QHBoxLayout *horizontalLayout_3;
     QLabel *label;
@@ -50,7 +50,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(539, 385);
+        MainWindow->resize(575, 596);
         MainWindow->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(82, 16, 117, 255), stop:1 rgba(131, 74, 161, 255));\n"
 "font-family:PolandCannedIntoFuture-OxE3;"));
         centralwidget = new QWidget(MainWindow);
@@ -59,18 +59,18 @@ public:
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        label_2 = new QLabel(centralwidget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setMinimumSize(QSize(0, 70));
+        ShowLabel = new QLabel(centralwidget);
+        ShowLabel->setObjectName(QString::fromUtf8("ShowLabel"));
+        ShowLabel->setMinimumSize(QSize(0, 250));
         QFont font;
         font.setFamily(QString::fromUtf8("PolandCannedIntoFuture-OxE3"));
         font.setPointSize(24);
-        label_2->setFont(font);
-        label_2->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
+        ShowLabel->setFont(font);
+        ShowLabel->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
 "border-radius: 7px;"));
-        label_2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
+        ShowLabel->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
 
-        verticalLayout->addWidget(label_2);
+        verticalLayout->addWidget(ShowLabel);
 
         TitleFrame = new QFrame(centralwidget);
         TitleFrame->setObjectName(QString::fromUtf8("TitleFrame"));
@@ -241,7 +241,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "OpenFRW", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "\320\224\320\273\321\217 \320\275\320\260\321\207\320\260\320\273\320\260 \320\276\321\202\320\272\321\200\320\276\320\271\321\202\320\265 \321\204\320\260\320\271\320\273 ", nullptr));
+        ShowLabel->setText(QCoreApplication::translate("MainWindow", "\320\224\320\273\321\217 \320\275\320\260\321\207\320\260\320\273\320\260 \320\276\321\202\320\272\321\200\320\276\320\271\321\202\320\265 \321\204\320\260\320\271\320\273 ", nullptr));
         label->setText(QString());
         label_3->setText(QCoreApplication::translate("MainWindow", "\320\222\320\253\320\221\320\236\320\240 \320\241\320\236\320\240\320\242\320\230\320\240\320\236\320\222\320\232\320\230", nullptr));
         label_4->setText(QString());
