@@ -5,7 +5,7 @@
 
 class FileOpen {
 public:
-    FileOpen();  // Constructor
+    FileOpen();
     QString openAndReadFile(const QString& filePath);
 };
 

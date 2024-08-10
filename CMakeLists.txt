@@ -49,6 +49,7 @@ else()
             ${PROJECT_SOURCES}
             resource.qrc
             WorkingWithFiles/fileopen.h WorkingWithFiles/fileopen.cpp
+            WorkingWithFiles/sortedtodistance.h WorkingWithFiles/sortedtodistance.cpp
         )
     endif()
 endif()

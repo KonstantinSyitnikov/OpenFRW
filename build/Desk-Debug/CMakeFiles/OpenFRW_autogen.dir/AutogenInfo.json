@@ -82,6 +82,12 @@
 			null
 		],
 		[
+			"/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtodistance.h",
+			"MU",
+			"DJNWZNSUMW/moc_sortedtodistance.cpp",
+			null
+		],
+		[
 			"/home/username/Documents/CPlusPlus/OpenFRW/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -141,6 +147,11 @@
 	[
 		[
 			"/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/fileopen.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtodistance.cpp",
 			"MU",
 			null
 		],

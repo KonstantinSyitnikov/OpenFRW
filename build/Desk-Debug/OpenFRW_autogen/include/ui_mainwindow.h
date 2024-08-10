@@ -17,6 +17,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QScrollArea>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -27,6 +28,8 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout_2;
+    QScrollArea *scrollArea;
+    QWidget *scrollAreaWidgetContents;
     QVBoxLayout *verticalLayout;
     QLabel *ShowLabel;
     QFrame *TitleFrame;
@@ -51,17 +54,26 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->resize(575, 596);
+        MainWindow->setMaximumSize(QSize(650, 700));
         MainWindow->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(82, 16, 117, 255), stop:1 rgba(131, 74, 161, 255));\n"
 "font-family:PolandCannedIntoFuture-OxE3;"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayout_2 = new QVBoxLayout(centralwidget);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        verticalLayout = new QVBoxLayout();
+        scrollArea = new QScrollArea(centralwidget);
+        scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
+        scrollArea->setMinimumSize(QSize(550, 250));
+        scrollArea->setWidgetResizable(true);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 561, 248));
+        verticalLayout = new QVBoxLayout(scrollAreaWidgetContents);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        ShowLabel = new QLabel(centralwidget);
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        ShowLabel = new QLabel(scrollAreaWidgetContents);
         ShowLabel->setObjectName(QString::fromUtf8("ShowLabel"));
-        ShowLabel->setMinimumSize(QSize(0, 250));
+        ShowLabel->setMinimumSize(QSize(0, 0));
         QFont font;
         font.setFamily(QString::fromUtf8("PolandCannedIntoFuture-OxE3"));
         font.setPointSize(24);
@@ -71,6 +83,10 @@ public:
         ShowLabel->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
 
         verticalLayout->addWidget(ShowLabel);
+
+        scrollArea->setWidget(scrollAreaWidgetContents);
+
+        verticalLayout_2->addWidget(scrollArea);
 
         TitleFrame = new QFrame(centralwidget);
         TitleFrame->setObjectName(QString::fromUtf8("TitleFrame"));
@@ -116,10 +132,7 @@ public:
         horizontalLayout_3->addWidget(label_4);
 
 
-        verticalLayout->addWidget(TitleFrame);
-
-
-        verticalLayout_2->addLayout(verticalLayout);
+        verticalLayout_2->addWidget(TitleFrame);
 
         TopFrame = new QFrame(centralwidget);
         TopFrame->setObjectName(QString::fromUtf8("TopFrame"));

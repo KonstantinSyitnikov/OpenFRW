@@ -22,6 +22,7 @@ public:
 
 private slots:
     void OpenFile();
+    void ToDistance();
 
 protected:
     void changeEvent(QEvent *e) override;
