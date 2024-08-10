@@ -14,12 +14,16 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         main.cpp
+        ###
         mainwindow.cpp
         mainwindow.h
+        ###
         mainwindow.ui
-        /home/username/Documents/CPlusPlus/OpenFRW/resource.qrc
-        Icons/iconfinder-backward-back-arrow-previous-left-4593199_122265.svg
-        Icons/iconfinder-forward-arrow-next-right-direction-4593180_122243.svg
+        resource.qrc
+
+
+
+
 
 )
 
@@ -43,6 +47,7 @@ else()
         add_executable(OpenFRW
             ${PROJECT_SOURCES}
             resource.qrc
+            WorkingWithFiles/fileopen.h WorkingWithFiles/fileopen.cpp
         )
     endif()
 endif()

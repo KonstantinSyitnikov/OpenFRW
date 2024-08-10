@@ -76,6 +76,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/fileopen.h",
+			"MU",
+			"DJNWZNSUMW/moc_fileopen.cpp",
+			null
+		],
+		[
 			"/home/username/Documents/CPlusPlus/OpenFRW/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -133,6 +139,11 @@
 	"SETTINGS_FILE" : "/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/CMakeFiles/OpenFRW_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/fileopen.cpp",
+			"MU",
+			null
+		],
 		[ "/home/username/Documents/CPlusPlus/OpenFRW/main.cpp", "MU", null ],
 		[
 			"/home/username/Documents/CPlusPlus/OpenFRW/mainwindow.cpp",

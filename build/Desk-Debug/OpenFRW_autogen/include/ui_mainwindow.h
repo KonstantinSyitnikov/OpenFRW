@@ -29,20 +29,21 @@ public:
     QVBoxLayout *verticalLayout_2;
     QVBoxLayout *verticalLayout;
     QLabel *label_2;
+    QFrame *TitleFrame;
     QHBoxLayout *horizontalLayout_3;
     QLabel *label;
     QLabel *label_3;
     QLabel *label_4;
     QFrame *TopFrame;
     QHBoxLayout *horizontalLayout;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
+    QPushButton *pushButtonDisgtance;
+    QPushButton *pushButtonName;
+    QPushButton *pushButtonOnTime;
     QFrame *BtmFrame;
     QHBoxLayout *horizontalLayout_2;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton_5;
-    QPushButton *pushButton_6;
+    QPushButton *pushButtonTipe;
+    QPushButton *pushButtonOpen;
+    QPushButton *pushButtonSave;
     QGraphicsView *graphicsView;
 
     void setupUi(QMainWindow *MainWindow)
@@ -71,10 +72,18 @@ public:
 
         verticalLayout->addWidget(label_2);
 
-        horizontalLayout_3 = new QHBoxLayout();
+        TitleFrame = new QFrame(centralwidget);
+        TitleFrame->setObjectName(QString::fromUtf8("TitleFrame"));
+        TitleFrame->setStyleSheet(QString::fromUtf8("QLabel{\n"
+"    background-color: transparent; \n"
+"   /* color: white; \n"
+"    border-radius: 7px;\n"
+"    border: 1px solid rgba(255,255,255,40);*/\n"
+"}"));
+        horizontalLayout_3 = new QHBoxLayout(TitleFrame);
         horizontalLayout_3->setSpacing(1);
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        label = new QLabel(centralwidget);
+        label = new QLabel(TitleFrame);
         label->setObjectName(QString::fromUtf8("label"));
         label->setMaximumSize(QSize(50, 16777215));
         label->setBaseSize(QSize(0, 0));
@@ -86,7 +95,7 @@ public:
 
         horizontalLayout_3->addWidget(label);
 
-        label_3 = new QLabel(centralwidget);
+        label_3 = new QLabel(TitleFrame);
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setFont(font);
         label_3->setStyleSheet(QString::fromUtf8("\n"
@@ -95,7 +104,7 @@ public:
 
         horizontalLayout_3->addWidget(label_3);
 
-        label_4 = new QLabel(centralwidget);
+        label_4 = new QLabel(TitleFrame);
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setMaximumSize(QSize(50, 16777215));
         label_4->setFont(font);
@@ -107,78 +116,112 @@ public:
         horizontalLayout_3->addWidget(label_4);
 
 
-        verticalLayout->addLayout(horizontalLayout_3);
+        verticalLayout->addWidget(TitleFrame);
 
 
         verticalLayout_2->addLayout(verticalLayout);
 
         TopFrame = new QFrame(centralwidget);
         TopFrame->setObjectName(QString::fromUtf8("TopFrame"));
-        TopFrame->setStyleSheet(QString::fromUtf8("background-color: rgba(35, 29, 38, 80);\n"
-"border: 1px solid rgba(255,255,255,40);\n"
-"border-radius: 7px;\n"
-"color: white;\n"
-"font: 18pt \"Sans Serif\";\n"
-""));
+        TopFrame->setStyleSheet(QString::fromUtf8("QFrame {\n"
+"    background-color: rgba(255, 255, 255, 10);\n"
+"    font: 16pt \"Sans Serif\";\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"    background-color: transparent; \n"
+"    color: white; \n"
+"    border-radius: 7px;\n"
+"    border: 1px solid rgba(255,255,255,40);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(255, 255, 255, 50);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(255, 255, 255, 90); \n"
+"}"));
         horizontalLayout = new QHBoxLayout(TopFrame);
         horizontalLayout->setSpacing(1);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        pushButton = new QPushButton(TopFrame);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setMinimumSize(QSize(150, 40));
+        pushButtonDisgtance = new QPushButton(TopFrame);
+        pushButtonDisgtance->setObjectName(QString::fromUtf8("pushButtonDisgtance"));
+        pushButtonDisgtance->setMinimumSize(QSize(150, 40));
         QFont font1;
-        font1.setFamily(QString::fromUtf8("Sans Serif"));
-        font1.setPointSize(18);
+        font1.setFamily(QString::fromUtf8("PolandCannedIntoFuture-OxE3"));
+        font1.setPointSize(14);
         font1.setBold(false);
         font1.setItalic(false);
         font1.setKerning(false);
-        pushButton->setFont(font1);
+        pushButtonDisgtance->setFont(font1);
 
-        horizontalLayout->addWidget(pushButton);
+        horizontalLayout->addWidget(pushButtonDisgtance);
 
-        pushButton_2 = new QPushButton(TopFrame);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setMinimumSize(QSize(150, 40));
+        pushButtonName = new QPushButton(TopFrame);
+        pushButtonName->setObjectName(QString::fromUtf8("pushButtonName"));
+        pushButtonName->setMinimumSize(QSize(150, 40));
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("PolandCannedIntoFuture-OxE3"));
+        font2.setPointSize(14);
+        pushButtonName->setFont(font2);
 
-        horizontalLayout->addWidget(pushButton_2);
+        horizontalLayout->addWidget(pushButtonName);
 
-        pushButton_3 = new QPushButton(TopFrame);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setMinimumSize(QSize(150, 40));
+        pushButtonOnTime = new QPushButton(TopFrame);
+        pushButtonOnTime->setObjectName(QString::fromUtf8("pushButtonOnTime"));
+        pushButtonOnTime->setMinimumSize(QSize(150, 40));
+        pushButtonOnTime->setFont(font2);
 
-        horizontalLayout->addWidget(pushButton_3);
+        horizontalLayout->addWidget(pushButtonOnTime);
 
 
         verticalLayout_2->addWidget(TopFrame);
 
         BtmFrame = new QFrame(centralwidget);
         BtmFrame->setObjectName(QString::fromUtf8("BtmFrame"));
-        BtmFrame->setStyleSheet(QString::fromUtf8("background-color: rgba(35, 29, 38, 80);\n"
-"border: 1px solid rgba(255,255,255,40);\n"
-"border-radius: 7px;\n"
-"color: white;\n"
-"font: 20pt \"Sans Serif\";\n"
-""));
+        BtmFrame->setStyleSheet(QString::fromUtf8("QFrame {\n"
+"    background-color: rgba(255, 255, 255, 10);\n"
+"    font: 16pt \"Sans Serif\";\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"    background-color: transparent; \n"
+"    color: white; \n"
+"    border-radius: 7px;\n"
+"    border: 1px solid rgba(255,255,255,40);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgba(255, 255, 255, 50);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgba(255, 255, 255, 90); \n"
+"}"));
         horizontalLayout_2 = new QHBoxLayout(BtmFrame);
         horizontalLayout_2->setSpacing(1);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        pushButton_4 = new QPushButton(BtmFrame);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setMinimumSize(QSize(150, 40));
+        pushButtonTipe = new QPushButton(BtmFrame);
+        pushButtonTipe->setObjectName(QString::fromUtf8("pushButtonTipe"));
+        pushButtonTipe->setMinimumSize(QSize(150, 40));
+        pushButtonTipe->setFont(font2);
 
-        horizontalLayout_2->addWidget(pushButton_4);
+        horizontalLayout_2->addWidget(pushButtonTipe);
 
-        pushButton_5 = new QPushButton(BtmFrame);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setMinimumSize(QSize(150, 40));
+        pushButtonOpen = new QPushButton(BtmFrame);
+        pushButtonOpen->setObjectName(QString::fromUtf8("pushButtonOpen"));
+        pushButtonOpen->setMinimumSize(QSize(150, 40));
+        pushButtonOpen->setFont(font2);
 
-        horizontalLayout_2->addWidget(pushButton_5);
+        horizontalLayout_2->addWidget(pushButtonOpen);
 
-        pushButton_6 = new QPushButton(BtmFrame);
-        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
-        pushButton_6->setMinimumSize(QSize(150, 40));
+        pushButtonSave = new QPushButton(BtmFrame);
+        pushButtonSave->setObjectName(QString::fromUtf8("pushButtonSave"));
+        pushButtonSave->setMinimumSize(QSize(150, 40));
+        pushButtonSave->setFont(font2);
 
-        horizontalLayout_2->addWidget(pushButton_6);
+        horizontalLayout_2->addWidget(pushButtonSave);
 
 
         verticalLayout_2->addWidget(BtmFrame);
@@ -198,16 +241,16 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "OpenFRW", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "\320\224\320\273\321\217 \320\275\320\260\321\207\320\260\320\273\320\260 \320\276\321\202\320\272\321\200\320\276\320\271\321\202\320\265 \321\204\320\260\320\271\320\273 ", nullptr));
         label->setText(QString());
         label_3->setText(QCoreApplication::translate("MainWindow", "\320\222\320\253\320\221\320\236\320\240 \320\241\320\236\320\240\320\242\320\230\320\240\320\236\320\222\320\232\320\230", nullptr));
         label_4->setText(QString());
-        pushButton->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\240\320\220\320\241\320\241\320\242\320\236\320\257\320\235\320\230\320\256", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "\320\237\320\236 \320\230\320\234\320\225\320\235\320\230", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\237\320\236 \320\222\320\240\320\225\320\234\320\225\320\235\320\230", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("MainWindow", "\320\237\320\236 \320\242\320\230\320\237\320\243", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("MainWindow", "\320\236\320\242\320\232\320\240\320\253\320\242\320\254 ", nullptr));
-        pushButton_6->setText(QCoreApplication::translate("MainWindow", "\320\241\320\236\320\245\320\240\320\220\320\235\320\230\320\242\320\254", nullptr));
+        pushButtonDisgtance->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\240\320\220\320\241\320\241\320\242\320\236\320\257\320\235\320\230\320\256", nullptr));
+        pushButtonName->setText(QCoreApplication::translate("MainWindow", "\320\237\320\236 \320\230\320\234\320\225\320\235\320\230", nullptr));
+        pushButtonOnTime->setText(QCoreApplication::translate("MainWindow", "\320\237\320\236 \320\222\320\240\320\225\320\234\320\225\320\235\320\230", nullptr));
+        pushButtonTipe->setText(QCoreApplication::translate("MainWindow", "\320\237\320\236 \320\242\320\230\320\237\320\243", nullptr));
+        pushButtonOpen->setText(QCoreApplication::translate("MainWindow", "\320\236\320\242\320\232\320\240\320\253\320\242\320\254 ", nullptr));
+        pushButtonSave->setText(QCoreApplication::translate("MainWindow", "\320\241\320\236\320\245\320\240\320\220\320\235\320\230\320\242\320\254", nullptr));
     } // retranslateUi
 
 };
