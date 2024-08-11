@@ -2,12 +2,21 @@
 #include <QStringList>
 #include <QDebug>
 #include <QtMath>
+//#include <QDateTime>
 
 SortedToDistance::SortedToDistance() {
     // Constructor
 }
 
+
 QString SortedToDistance::sortContentDistance(const QString& content) {
+
+    //UNIX TIME
+    // qint64 currentUnixTime = QDateTime::currentSecsSinceEpoch();
+
+    // qDebug() << "Current time:" << currentUnixTime;
+    //
+
     QStringList lines = content.split('\n', QString::SkipEmptyParts);
     QList<QPair<double, QString>> sortableList;
 
@@ -37,7 +46,7 @@ QString SortedToDistance::sortContentDistance(const QString& content) {
     QStringList sortedLines;
 
     for (const auto& pair : sortableList) {
-        qDebug() << "Our Pair"<<pair.second;
+      //  qDebug() << "Our Pair"<<pair.second;
         sortedLines.append(pair.second);
     }
 

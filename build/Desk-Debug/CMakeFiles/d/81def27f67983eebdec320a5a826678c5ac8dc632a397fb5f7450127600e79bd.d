@@ -4,6 +4,8 @@ OpenFRW_autogen/timestamp: \
   /home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/fileopen.h \
   /home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtodistance.cpp \
   /home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtodistance.h \
+  /home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtoname.cpp \
+  /home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtoname.h \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
   CMakeFiles/3.28.3/CMakeSystem.cmake \

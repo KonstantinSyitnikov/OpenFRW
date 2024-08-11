@@ -9,7 +9,6 @@
 class SortedToDistance {
 public:
     SortedToDistance();
-
     QString sortContentDistance(const QString& content);
 };
 

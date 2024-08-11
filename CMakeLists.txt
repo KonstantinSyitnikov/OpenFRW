@@ -50,6 +50,7 @@ else()
             resource.qrc
             WorkingWithFiles/fileopen.h WorkingWithFiles/fileopen.cpp
             WorkingWithFiles/sortedtodistance.h WorkingWithFiles/sortedtodistance.cpp
+            WorkingWithFiles/sortedtoname.h WorkingWithFiles/sortedtoname.cpp
         )
     endif()
 endif()

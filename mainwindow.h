@@ -23,6 +23,10 @@ public:
 private slots:
     void OpenFile();
     void ToDistance();
+    void ToName();
+    void AddText();
+    void DeleteString();
+    void SaveFile();
 
 protected:
     void changeEvent(QEvent *e) override;

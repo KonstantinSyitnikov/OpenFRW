@@ -5,7 +5,7 @@
 #include <QFileDialog>
 
 FileOpen::FileOpen() {
-
+    // Constructor
 }
 
 
@@ -20,7 +20,7 @@ QString FileOpen::openAndReadFile(const QString& filePath) {
     QTextStream in(&file);
     QString fileContent = in.readAll();
 
-    qDebug() << "File content:\n" << fileContent;
+   // qDebug() << "File content:\n" << fileContent;
 
     file.close();
     return fileContent;

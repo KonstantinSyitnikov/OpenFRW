@@ -37,13 +37,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 66,
+				"line" : 68,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 56,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
@@ -155,7 +155,9 @@
 				1,
 				2,
 				7,
-				10
+				9,
+				11,
+				14
 			]
 		}
 	],
@@ -231,7 +233,9 @@
 				1,
 				2,
 				7,
-				10
+				9,
+				11,
+				14
 			]
 		},
 		{
@@ -240,7 +244,9 @@
 			[
 				3,
 				6,
-				8
+				8,
+				10,
+				12
 			]
 		},
 		{
@@ -249,15 +255,15 @@
 			[
 				4,
 				5,
-				9
+				13
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				11,
-				12
+				15,
+				16
 			]
 		}
 	],
@@ -306,6 +312,28 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "WorkingWithFiles/fileopen.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "WorkingWithFiles/sortedtodistance.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "WorkingWithFiles/sortedtodistance.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "WorkingWithFiles/sortedtoname.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "WorkingWithFiles/sortedtoname.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
