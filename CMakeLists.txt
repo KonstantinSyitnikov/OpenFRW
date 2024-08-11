@@ -52,6 +52,8 @@ else()
             WorkingWithFiles/sortedtodistance.h WorkingWithFiles/sortedtodistance.cpp
             WorkingWithFiles/sortedtoname.h WorkingWithFiles/sortedtoname.cpp
             WorkingWithFiles/sortedontime.h WorkingWithFiles/sortedontime.cpp
+            WorkingWithFiles/sortedtotipe.h WorkingWithFiles/sortedtotipe.cpp
+
         )
     endif()
 endif()

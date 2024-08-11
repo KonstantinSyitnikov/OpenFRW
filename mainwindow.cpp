@@ -4,6 +4,7 @@
 #include "WorkingWithFiles/sortedtodistance.h"
 #include "WorkingWithFiles/sortedtoname.h"
 #include "WorkingWithFiles/sortedontime.h"
+#include "WorkingWithFiles/sortedtotipe.h"
 #include <QDebug>
 #include <QString>
 #include <QFileDialog>
@@ -22,6 +23,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushButtonDisgtance, &QPushButton::clicked, this, [=]{ ToDistance(); });
     connect(ui->pushButtonName, &QPushButton::clicked, this, [=]{ ToName(); });
     connect(ui->pushButtonOnTime,&QPushButton::clicked, this, [=]{ ToTime(); });
+    connect(ui->pushButtonTipe,&QPushButton::clicked, this, [=]{ ToTipe(); });
     connect(ui->pushButtonAdd, &QPushButton::clicked, this, [=]{ AddText(); });
     connect(ui->pushButtonDel, &QPushButton::clicked, this, [=]{ DeleteString(); });
     connect(ui->pushButtonSave, &QPushButton::clicked, this, [=]{ SaveFile(); });
@@ -125,6 +127,32 @@ void MainWindow::ToTime()
 
     SortedOnTime sortName;
     QString sortedText = sortName.sortContentTime(this->showText);
+    ui->ShowLabel->setText(sortedText);
+}
+
+void MainWindow::ToTipe()
+{
+    QString verifyData = ui->ShowLabel->text();
+    if (verifyData.isEmpty()) {
+        ui->ShowLabel->setText("Нет данных для сортировки \n Нажмите кнопку 'ОТКРЫТЬ'");
+        //qDebug() << "No content";
+        return;
+    }
+    else if (verifyData=="Для начала откройте файл ")
+    {
+        ui->ShowLabel->setText("Нет данных для сортировки \n Нажмите кнопку 'ОТКРЫТЬ'");
+
+        return;
+    }
+    else if (verifyData=="Нет данных для сортировки \n Нажмите кнопку 'ОТКРЫТЬ'")
+    {
+        ui->ShowLabel->setText("Нет данных для сортировки \n Нажмите кнопку 'ОТКРЫТЬ'");
+
+        return;
+    }
+
+    SortedToTipe sortTipe;
+    QString sortedText = sortTipe.sortContentTipe(this->showText);
     ui->ShowLabel->setText(sortedText);
 }
 

@@ -24,10 +24,12 @@ private slots:
     void OpenFile();
     void ToDistance();
     void ToName();
+    void ToTime();
+    void ToTipe();
     void AddText();
     void DeleteString();
     void SaveFile();
-    void ToTime();
+
 
 protected:
     void changeEvent(QEvent *e) override;

@@ -105,6 +105,14 @@ build CMakeFiles/OpenFRW.dir/WorkingWithFiles/sortedontime.cpp.o: CXX_COMPILER__
   OBJECT_DIR = CMakeFiles/OpenFRW.dir
   OBJECT_FILE_DIR = CMakeFiles/OpenFRW.dir/WorkingWithFiles
 
+build CMakeFiles/OpenFRW.dir/WorkingWithFiles/sortedtotipe.cpp.o: CXX_COMPILER__OpenFRW_unscanned_Debug /home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtotipe.cpp || cmake_object_order_depends_target_OpenFRW
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/OpenFRW.dir/WorkingWithFiles/sortedtotipe.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/OpenFRW_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++
+  OBJECT_DIR = CMakeFiles/OpenFRW.dir
+  OBJECT_FILE_DIR = CMakeFiles/OpenFRW.dir/WorkingWithFiles
+
 build CMakeFiles/OpenFRW.dir/OpenFRW_autogen/EWIEGA46WW/qrc_resource.cpp.o: CXX_COMPILER__OpenFRW_unscanned_Debug /home/username/Documents/CPlusPlus/OpenFRW/build/Desk-Debug/OpenFRW_autogen/EWIEGA46WW/qrc_resource.cpp || cmake_object_order_depends_target_OpenFRW
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/OpenFRW.dir/OpenFRW_autogen/EWIEGA46WW/qrc_resource.cpp.o.d
@@ -121,7 +129,7 @@ build CMakeFiles/OpenFRW.dir/OpenFRW_autogen/EWIEGA46WW/qrc_resource.cpp.o: CXX_
 #############################################
 # Link the executable OpenFRW
 
-build OpenFRW: CXX_EXECUTABLE_LINKER__OpenFRW_Debug CMakeFiles/OpenFRW.dir/OpenFRW_autogen/mocs_compilation.cpp.o CMakeFiles/OpenFRW.dir/main.cpp.o CMakeFiles/OpenFRW.dir/mainwindow.cpp.o CMakeFiles/OpenFRW.dir/WorkingWithFiles/fileopen.cpp.o CMakeFiles/OpenFRW.dir/WorkingWithFiles/sortedtodistance.cpp.o CMakeFiles/OpenFRW.dir/WorkingWithFiles/sortedtoname.cpp.o CMakeFiles/OpenFRW.dir/WorkingWithFiles/sortedontime.cpp.o CMakeFiles/OpenFRW.dir/OpenFRW_autogen/EWIEGA46WW/qrc_resource.cpp.o | /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13 || OpenFRW_autogen OpenFRW_autogen_timestamp_deps
+build OpenFRW: CXX_EXECUTABLE_LINKER__OpenFRW_Debug CMakeFiles/OpenFRW.dir/OpenFRW_autogen/mocs_compilation.cpp.o CMakeFiles/OpenFRW.dir/main.cpp.o CMakeFiles/OpenFRW.dir/mainwindow.cpp.o CMakeFiles/OpenFRW.dir/WorkingWithFiles/fileopen.cpp.o CMakeFiles/OpenFRW.dir/WorkingWithFiles/sortedtodistance.cpp.o CMakeFiles/OpenFRW.dir/WorkingWithFiles/sortedtoname.cpp.o CMakeFiles/OpenFRW.dir/WorkingWithFiles/sortedontime.cpp.o CMakeFiles/OpenFRW.dir/WorkingWithFiles/sortedtotipe.cpp.o CMakeFiles/OpenFRW.dir/OpenFRW_autogen/EWIEGA46WW/qrc_resource.cpp.o | /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13 || OpenFRW_autogen OpenFRW_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13  /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13  /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
   OBJECT_DIR = CMakeFiles/OpenFRW.dir
@@ -230,7 +238,7 @@ build OpenFRW_autogen/EWIEGA46WW/qrc_resource.cpp | ${cmake_ninja_workdir}OpenFR
 #############################################
 # Phony custom command for CMakeFiles/OpenFRW_autogen_timestamp_deps
 
-build CMakeFiles/OpenFRW_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/OpenFRW_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13 /usr/lib/qt5/bin/moc /usr/lib/qt5/bin/uic
+build CMakeFiles/OpenFRW_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/OpenFRW_autogen_timestamp_deps: phony /usr/lib/qt5/bin/uic /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13 /usr/lib/qt5/bin/moc
 
 
 #############################################

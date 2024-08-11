@@ -100,6 +100,12 @@
 			null
 		],
 		[
+			"/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtotipe.h",
+			"MU",
+			"DJNWZNSUMW/moc_sortedtotipe.cpp",
+			null
+		],
+		[
 			"/home/username/Documents/CPlusPlus/OpenFRW/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -174,6 +180,11 @@
 		],
 		[
 			"/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtoname.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtotipe.cpp",
 			"MU",
 			null
 		],
