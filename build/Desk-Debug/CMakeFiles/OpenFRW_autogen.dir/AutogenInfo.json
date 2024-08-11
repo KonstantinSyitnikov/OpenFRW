@@ -82,6 +82,12 @@
 			null
 		],
 		[
+			"/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedontime.h",
+			"MU",
+			"DJNWZNSUMW/moc_sortedontime.cpp",
+			null
+		],
+		[
 			"/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtodistance.h",
 			"MU",
 			"DJNWZNSUMW/moc_sortedtodistance.cpp",
@@ -153,6 +159,11 @@
 	[
 		[
 			"/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/fileopen.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedontime.cpp",
 			"MU",
 			null
 		],

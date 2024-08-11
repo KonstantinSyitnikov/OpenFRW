@@ -1,7 +1,7 @@
 #include "sortedtoname.h"
 #include <QStringList>
 #include <QDebug>
-#include <QtMath>
+//#include <QtMath>
 
 sortedtoName::sortedtoName() {
 

@@ -27,6 +27,7 @@ private slots:
     void AddText();
     void DeleteString();
     void SaveFile();
+    void ToTime();
 
 protected:
     void changeEvent(QEvent *e) override;

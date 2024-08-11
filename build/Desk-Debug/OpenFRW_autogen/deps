@@ -2,6 +2,8 @@ OpenFRW_autogen/timestamp: \
 	/home/username/Documents/CPlusPlus/OpenFRW/CMakeLists.txt \
 	/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/fileopen.cpp \
 	/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/fileopen.h \
+	/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedontime.cpp \
+	/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedontime.h \
 	/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtodistance.cpp \
 	/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtodistance.h \
 	/home/username/Documents/CPlusPlus/OpenFRW/WorkingWithFiles/sortedtoname.cpp \
