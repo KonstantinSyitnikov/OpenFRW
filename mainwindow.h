@@ -6,6 +6,8 @@
 #include <QDebug>
 #include <QString>
 #include <QStack>
+#include <QGraphicsEllipseItem>
+#include <QGraphicsScene>
 
 
 QT_BEGIN_NAMESPACE
@@ -29,6 +31,8 @@ private slots:
     void AddText();
     void DeleteString();
     void SaveFile();
+    void keyPressEvent(QKeyEvent *event);
+    void ShowGraph();
 
 
 protected:
@@ -36,7 +40,8 @@ protected:
 
 private:
     Ui::MainWindow *ui;
-   QString showText = " ";
+    QString showText = " ";
+    QGraphicsScene *scene;
 };
 
 #endif // MAINWINDOW_H

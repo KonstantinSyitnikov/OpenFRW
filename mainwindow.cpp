@@ -11,6 +11,8 @@
 #include <QVBoxLayout>
 #include <QInputDialog>
 #include <QDateTime>
+#include <QKeyEvent>
+
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -27,6 +29,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushButtonAdd, &QPushButton::clicked, this, [=]{ AddText(); });
     connect(ui->pushButtonDel, &QPushButton::clicked, this, [=]{ DeleteString(); });
     connect(ui->pushButtonSave, &QPushButton::clicked, this, [=]{ SaveFile(); });
+
+    scene = new QGraphicsScene(this);
+    ui->graphicsView->setScene(scene);
 
 }
 
@@ -47,6 +52,69 @@ void MainWindow::OpenFile() {
     this->showText = fileOpener.openAndReadFile(filePath);
     ui->ShowLabel->setText(this->showText);  //ShowTextLabel
 }
+/////////////
+
+
+void MainWindow::keyPressEvent(QKeyEvent *event) {
+    if (event->modifiers() == Qt::ControlModifier) {
+        if (event->key() == Qt::Key_Plus || event->key() == Qt::Key_Equal) {
+            // Ctrl + + zoom in
+            ui->graphicsView->scale(1.1, 1.1);
+        } else if (event->key() == Qt::Key_Minus) {
+            // Ctrl + -  zoom out
+            ui->graphicsView->scale(0.9, 0.9);
+        }
+    }
+    QMainWindow::keyPressEvent(event);
+}
+
+void MainWindow::ShowGraph()
+{
+    // clear scene
+    scene->clear();
+
+    //get coord in label
+    QString data = ui->ShowLabel->text();
+    QStringList lines = data.split('\n', QString::SkipEmptyParts);
+
+    // if data empty
+    if (lines.isEmpty()) {
+
+        return;
+    }
+
+    for (const QString& line : lines) {
+        QStringList parts = line.split(' ', QString::SkipEmptyParts);
+        if (parts.size() > 3) {
+            float x = parts[1].toFloat(); // x coord
+            float y = parts[2].toFloat(); // y coord
+            QString label = parts[0]; // set name point
+
+            // Create point
+            QGraphicsEllipseItem *point = new QGraphicsEllipseItem(x, y, 5, 5); // A small circle at (x, y)
+
+
+            point->setPen(QPen(Qt::black)); // border point
+            point->setBrush(Qt::white); //centr point
+            QGraphicsTextItem *textItem = new QGraphicsTextItem(label);
+
+
+            textItem->setPos(x + 5, y);
+            scene->addItem(textItem);
+            scene->addItem(point);
+        }
+    }
+
+    ui->graphicsView->setRenderHint(QPainter::Antialiasing);
+    ui->graphicsView->setResizeAnchor(QGraphicsView::AnchorViewCenter);
+    ui->graphicsView->fitInView(scene->itemsBoundingRect(), Qt::KeepAspectRatio);
+
+    QRectF rect(0, 0, 100, 100);
+    ui->graphicsView->fitInView(rect, Qt::KeepAspectRatio);
+}
+
+
+
 
 /////////////////
 
@@ -76,6 +144,7 @@ void MainWindow::ToDistance()
 
 
     ui->ShowLabel->setText(sortedText);
+    ShowGraph();
 }
 
 void MainWindow::ToName()

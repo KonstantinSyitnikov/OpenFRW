@@ -335,7 +335,9 @@
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
+ mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h
+ mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qpixelformat.h
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h
@@ -346,9 +348,13 @@
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
+ mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsEllipseItem
+ mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
+ mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsitem.h
+ mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsscene.h
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
  mdp:/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h

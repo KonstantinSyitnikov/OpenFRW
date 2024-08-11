@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>576</width>
-    <height>637</height>
+    <width>600</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -24,13 +24,13 @@
 font-family:PolandCannedIntoFuture-OxE3;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_2">
+   <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,0,0,0,0">
     <item>
      <widget class="QScrollArea" name="scrollArea">
       <property name="minimumSize">
        <size>
         <width>550</width>
-        <height>250</height>
+        <height>240</height>
        </size>
       </property>
       <property name="widgetResizable">
@@ -41,8 +41,8 @@ font-family:PolandCannedIntoFuture-OxE3;</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>562</width>
-         <height>248</height>
+         <width>586</width>
+         <height>238</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout">
@@ -465,7 +465,14 @@ QPushButton:pressed {
      </widget>
     </item>
     <item>
-     <widget class="QGraphicsView" name="graphicsView"/>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

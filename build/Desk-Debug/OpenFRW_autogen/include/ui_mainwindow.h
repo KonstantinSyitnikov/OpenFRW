@@ -59,7 +59,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(576, 637);
+        MainWindow->resize(600, 700);
         MainWindow->setMaximumSize(QSize(650, 700));
         MainWindow->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(82, 16, 117, 255), stop:1 rgba(131, 74, 161, 255));\n"
 "font-family:PolandCannedIntoFuture-OxE3;"));
@@ -69,11 +69,11 @@ public:
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         scrollArea = new QScrollArea(centralwidget);
         scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
-        scrollArea->setMinimumSize(QSize(550, 250));
+        scrollArea->setMinimumSize(QSize(550, 240));
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 562, 248));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 586, 238));
         verticalLayout = new QVBoxLayout(scrollAreaWidgetContents);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -315,6 +315,7 @@ public:
 
         graphicsView = new QGraphicsView(centralwidget);
         graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
+        graphicsView->setMinimumSize(QSize(0, 0));
 
         verticalLayout_2->addWidget(graphicsView);
 
